@@ -437,8 +437,17 @@ a {
     padding: 96px 0;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
     display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all ease .3s;
 }
 
 .feedback-item .avatar {
