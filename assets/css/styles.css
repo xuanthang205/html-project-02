@@ -86,6 +86,10 @@ a {
     --line-clamp: 2;
 }
 
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
 .break-all {
     word-break: break-all;
 }
@@ -373,7 +377,6 @@ a {
     height: 278px;
     margin: -1px;
     object-fit: cover;
-    object-position: top left;
     border-radius: 12px 12px 0 0;
     vertical-align: bottom;
 }
@@ -442,7 +445,6 @@ a {
 }
 
 .feedback .main-content {
-
     overflow: hidden;
 }
 
@@ -513,4 +515,56 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.54; /* 153.846% */
+}
+
+/* Features */
+.features {
+    padding: 65px 0;
+    margin: 135px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+    object-position: 20% 0;
+}
+
+.features .images img:first-child {
+    margin-top: 34px;
+}
+
+.features .images img:last-child {
+    object-position: 85% 0;
+}
+
+.features .content {
+    width: 41%;
+}
+
+.features .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.features .content .cta-btn {
+    min-width: 137px;
+    border-radius: 26px;
+    background-color: var(--primary-color);
+    margin-top: 32px;
 }

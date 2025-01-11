@@ -1,5 +1,5 @@
-const feedbackList = document.querySelector('.feedback-list');
-const feedbackItems = document.querySelectorAll('.feedback-item');
+const feedbackList = document.querySelector(".feedback-list");
+const feedbackItems = document.querySelectorAll(".feedback-item");
 const totalItems = feedbackItems.length;
 
 let currentIndex = 1;
@@ -9,23 +9,19 @@ const showNextItem = () => {
 
     // Cập nhật chỉ số phần tử hiện tại
     currentIndex++;
-    if(currentIndex >= totalItems) {
+    if (currentIndex >= totalItems) {
         currentIndex = 0;
     }
 };
 
-let interval = setInterval(showNextItem, 2000);
+let interval = setInterval(showNextItem, 4000);
 
-feedbackList.onmousedown = function() {
+feedbackList.onmousedown = function () {
     clearInterval(interval);
-    feedbackList.style.cursor = 'pointer';
-}
+    feedbackList.style.cursor = "pointer";
+};
 
-feedbackList.onmouseup = function() {
-    interval = setInterval(showNextItem, 2000);
-    feedbackList.style.cursor = 'default';
-}
-
-
-
-
+feedbackList.onmouseup = function () {
+    interval = setInterval(showNextItem, 4000);
+    feedbackList.style.cursor = "default";
+};
