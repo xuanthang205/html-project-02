@@ -12,7 +12,8 @@ body {
     scroll-behavior: smooth;
 }
 
-#courses {
+#courses,
+#features {
     scroll-margin-top: 80px;
 }
 
@@ -438,6 +439,7 @@ a {
     font-weight: 400;
     line-height: 1.86; /* 185.714% */
     margin-top: 6px;
+    height: calc(1.86em * 2);
 }
 
 .popular .foot {
@@ -641,11 +643,16 @@ a {
 
 .blog-list .thumb {
     width: 100%;
-    height: 250px;
+    height: 574px;
     object-fit: cover;
-    object-position: 60%;
+    object-position: top left;
     border-radius: 16px 16px 0px 0px;
     vertical-align: bottom;
+}
+
+.blog-list:nth-of-type(2) .blog-item:first-child .thumb,
+.blog-list:nth-of-type(2) .blog-item:last-child .thumb {
+    object-position: 50% 0;
 }
 
 .blog-list .info {
@@ -661,6 +668,7 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+    /* height: calc(1.75em * 2); */
 }
 
 .blog-list .cta-blog {
@@ -708,3 +716,82 @@ a {
     justify-content: center;
 }
 
+.blog .dot {
+    width: 12px;
+    height: 12px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2e2100;
+    padding-top: 96px;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .column:first-child {
+    width: 35%;
+}
+
+.footer .column {
+    width: 21.6%;
+}
+
+.footer .desc {
+    margin-top: 18px;
+    width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 0 18px;
+}
+
+.footer .title {
+    color: #fff;
+    width: 130px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    padding-bottom: 14px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .list {
+    margin-top: 16px;
+}
+
+.footer .list a {
+    display: inline-block;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+    padding-top: 12px;
+}
+
+.footer strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer .copyright {
+    padding: 28px 0;
+    text-align: center;
+}
+
+.footer .copyright p {
+    color: #807d74;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
