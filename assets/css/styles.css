@@ -12,6 +12,10 @@ body {
     scroll-behavior: smooth;
 }
 
+#courses {
+    scroll-margin-top: 80px;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -437,17 +441,20 @@ a {
     padding: 96px 0;
 }
 
+.feedback .main-content {
+
+    overflow: hidden;
+}
+
 .feedback-list {
     display: flex;
-    overflow: hidden;
+    transition: all ease 1s;
 }
 
 .feedback-item {
     display: flex;
     flex-shrink: 0;
     width: 100%;
-    transform: translateX(-100%);
-    transition: all ease .3s;
 }
 
 .feedback-item .avatar {
