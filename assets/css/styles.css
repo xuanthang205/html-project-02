@@ -215,6 +215,7 @@ a {
 }
 
 .hero-summary .item .icon {
+    flex-shrink: 0;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -486,7 +487,7 @@ a {
     height: 72px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top left;
+    object-position: top center;
 }
 
 .feedback-item .info .title {
