@@ -1,0 +1,21 @@
+.swiper-container {
+    position: relative; /* Đặt relative để làm mốc */
+}
+
+/* Căn chỉnh phân trang theo vị trí swiper-wrapper */
+.swiper-container .swiper-pagination {
+    position: absolute; /* Để có thể điều chỉnh vị trí */
+    bottom: -30px;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    background-color: #634700;
+    opacity: 1;
+}
+
+/* Chấm đang active */
+.swiper-pagination-bullet-active {
+    background-color: #fb900f; /* Màu sắc chấm đang active */
+    transform: scale(1.2); /* Phóng to chấm đang active */
+}

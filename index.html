@@ -90,6 +90,12 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
             rel="stylesheet"
         />
+        <!-- Thêm Swiper CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/swiper.css" />
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -241,183 +247,590 @@
             <!-- Popular -->
             <div id="courses" class="popular">
                 <div class="main-content">
-                    <div class="popular-top">
-                        <div class="info">
-                            <h2 class="heading lv2">Our popular courses</h2>
-                            <p class="desc line-clamp line-2">
-                                Build new skills with new trendy courses and
-                                shine for the next future career.
-                            </p>
+                    <div class="swiper-container">
+                        <div class="popular-top">
+                            <div class="info">
+                                <h2 class="heading lv2">Our popular courses</h2>
+                                <p class="desc line-clamp line-2">
+                                    Build new skills with new trendy courses and
+                                    shine for the next future career.
+                                </p>
+                            </div>
+
+                            <div class="controls">
+                                <button class="control-btn button-prev">
+                                    <svg
+                                        width="8"
+                                        height="14"
+                                        viewBox="0 0 8 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7 1L1 7L7 13"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <button class="control-btn button-next">
+                                    <svg
+                                        width="8"
+                                        height="14"
+                                        viewBox="0 0 8 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 1L7 7L1 13"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="controls">
-                            <button class="control-btn">
-                                <svg
-                                    width="8"
-                                    height="14"
-                                    viewBox="0 0 8 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M7 1L1 7L7 13"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                            <button class="control-btn">
-                                <svg
-                                    width="8"
-                                    height="14"
-                                    viewBox="0 0 8 14"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 1L7 7L1 13"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                        <div class="swiper-wrapper">
+                            <div class="course-list swiper-slide">
+                                <!-- Item 1 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/decade.webp"
+                                            alt="Decade"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Basic web design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/w.webp"
+                                            alt="W"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    UI/UX design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/ooo.webp"
+                                            alt="OOO"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Web App design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="course-list">
-                        <!-- Item 1 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/image/decade.webp"
-                                    alt="Decade"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp">
-                                            Basic web design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="17"
-                                            viewBox="0 0 18 17"
-                                            fill="none"
-                                        >
-                                            <path
-                                                d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
-                                                fill="#FEA31B"
-                                            />
-                                        </svg>
-                                        <span class="value">5</span>
+                            <div class="course-list swiper-slide">
+                                <!-- Item 1 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/decade.webp"
+                                            alt="Decade"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Basic web design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                                <p class="desc line-clamp line-2">
-                                    Get the best course.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
+                                <!-- Item 2 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/w.webp"
+                                            alt="W"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    UI/UX design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/ooo.webp"
+                                            alt="OOO"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Web App design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="course-list swiper-slide">
+                                <!-- Item 1 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/decade.webp"
+                                            alt="Decade"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Basic web design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/w.webp"
+                                            alt="W"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    UI/UX design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/ooo.webp"
+                                            alt="OOO"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Web App design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="course-list swiper-slide">
+                                <!-- Item 1 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/decade.webp"
+                                            alt="Decade"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Basic web design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/w.webp"
+                                            alt="W"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    UI/UX design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.5</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="course-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/ooo.webp"
+                                            alt="OOO"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <div class="head">
+                                            <h3 class="title">
+                                                <a href="#!" class="line-clamp">
+                                                    Web App design
+                                                </a>
+                                            </h3>
+                                            <div class="rating">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    height="17"
+                                                    viewBox="0 0 18 17"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
+                                                        fill="#FEA31B"
+                                                    />
+                                                </svg>
+                                                <span class="value">4.2</span>
+                                            </div>
+                                        </div>
+                                        <p class="desc line-clamp line-2">
+                                            Get the best course, gain knowledge
+                                            and shine for your future career.
+                                        </p>
+                                        <div class="foot">
+                                            <span class="price">$120.75</span>
+                                            <button class="btn book-btn">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Item 2 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/image/w.webp"
-                                    alt="W"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp">
-                                            UI/UX design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="17"
-                                            viewBox="0 0 18 17"
-                                            fill="none"
-                                        >
-                                            <path
-                                                d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
-                                                fill="#FEA31B"
-                                            />
-                                        </svg>
-                                        <span class="value">4.5</span>
-                                    </div>
-                                </div>
-                                <p class="desc line-clamp line-2">
-                                    Get the best course, gain knowledge and
-                                    shine for your future career.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="course-item">
-                            <a href="#!">
-                                <img
-                                    src="./assets/image/ooo.webp"
-                                    alt="OOO"
-                                    class="thumb"
-                                />
-                            </a>
-                            <div class="info">
-                                <div class="head">
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp">
-                                            Web App design
-                                        </a>
-                                    </h3>
-                                    <div class="rating">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="17"
-                                            viewBox="0 0 18 17"
-                                            fill="none"
-                                        >
-                                            <path
-                                                d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z"
-                                                fill="#FEA31B"
-                                            />
-                                        </svg>
-                                        <span class="value">4.2</span>
-                                    </div>
-                                </div>
-                                <p class="desc line-clamp line-2">
-                                    Get the best course, gain knowledge and
-                                    shine for your future career.
-                                </p>
-                                <div class="foot">
-                                    <span class="price">$120.75</span>
-                                    <button class="btn book-btn">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -425,85 +838,89 @@
             <!-- Feedback -->
             <div class="feedback">
                 <div class="main-content">
-                    <div class="feedback-list">
-                        <!-- Feedback Item 1 -->
-                        <div class="feedback-item">
-                            <div class="info">
-                                <img
-                                    src="./assets/image/steve.webp"
-                                    alt="Steve Rogers"
-                                    class="avatar"
-                                />
-                                <p class="title">Steve Rogers</p>
-                                <p class="desc">Captain America</p>
-                                <div class="dots">
-                                    <span class="dot active"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Feedback Item 1 -->
+                            <div class="feedback-item swiper-slide">
+                                <div class="info">
+                                    <img
+                                        src="./assets/image/steve.webp"
+                                        alt="Steve Rogers"
+                                        class="avatar"
+                                    />
+                                    <p class="title">Steve Rogers</p>
+                                    <p class="desc">Captain America</p>
+                                    <div class="dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    <img
+                                        src="./assets/image/icons/Vector.svg"
+                                        alt=""
+                                        class="open-quotes"
+                                    />
+                                    <blockquote>
+                                        I can do this all day."
+                                    </blockquote>
                                 </div>
                             </div>
+                            <!-- Feedback Item 2 -->
+                            <div class="feedback-item swiper-slide">
+                                <div class="info">
+                                    <img
+                                        src="./assets/image/tony.webp"
+                                        alt="Tony Stark"
+                                        class="avatar"
+                                    />
+                                    <p class="title">Tony Stark</p>
+                                    <p class="desc">Iron Man</p>
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
 
-                            <div class="content">
-                                <img
-                                    src="./assets/image/icons/Vector.svg"
-                                    alt=""
-                                    class="open-quotes"
-                                />
-                                <blockquote>I can do this all day."</blockquote>
-                            </div>
-                        </div>
-                        <!-- Feedback Item 2 -->
-                        <div class="feedback-item">
-                            <div class="info">
-                                <img
-                                    src="./assets/image/tony.webp"
-                                    alt="Tony Stark"
-                                    class="avatar"
-                                />
-                                <p class="title">Tony Stark</p>
-                                <p class="desc">Iron Man</p>
-                                <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot active"></span>
-                                    <span class="dot"></span>
+                                <div class="content">
+                                    <img
+                                        src="./assets/image/icons/Vector.svg"
+                                        alt=""
+                                        class="open-quotes"
+                                    />
+                                    <blockquote>I am Iron Man."</blockquote>
                                 </div>
                             </div>
-
-                            <div class="content">
-                                <img
-                                    src="./assets/image/icons/Vector.svg"
-                                    alt=""
-                                    class="open-quotes"
-                                />
-                                <blockquote>I am Iron Man."</blockquote>
-                            </div>
-                        </div>
-                        <!-- Feedback Item 3 -->
-                        <div class="feedback-item">
-                            <div class="info">
-                                <img
-                                    src="./assets/image/thor.webp"
-                                    alt="Thor"
-                                    class="avatar"
-                                />
-                                <p class="title">Thor</p>
-                                <p class="desc">Thor Odinson</p>
-                                <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot active"></span>
+                            <!-- Feedback Item 3 -->
+                            <div class="feedback-item swiper-slide">
+                                <div class="info">
+                                    <img
+                                        src="./assets/image/thor.webp"
+                                        alt="Thor"
+                                        class="avatar"
+                                    />
+                                    <p class="title">Thor</p>
+                                    <p class="desc">Thor Odinson</p>
+                                    <div class="dots">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot active"></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="content">
-                                <img
-                                    src="./assets/image/icons/Vector.svg"
-                                    alt=""
-                                    class="open-quotes"
-                                />
-                                <blockquote>
-                                    What more could I lose?"
-                                </blockquote>
+                                <div class="content">
+                                    <img
+                                        src="./assets/image/icons/Vector.svg"
+                                        alt=""
+                                        class="open-quotes"
+                                    />
+                                    <blockquote>
+                                        What more could I lose?"
+                                    </blockquote>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -571,218 +988,261 @@
             <!-- Blog -->
             <div id="blog" class="blog">
                 <div class="main-content">
-                    <div class="blog-top">
-                        <h2 class="heading lv2 line-clamp">Our blog</h2>
-                        <p class="desc line-clamp line-2">
-                            Read our regular travel blog and know the latest
-                            update of tour and travel
-                        </p>
-                    </div>
+                    <div class="swiper-container">
+                        <div class="blog-top">
+                            <h2 class="heading lv2 line-clamp">Our blog</h2>
+                            <p class="desc line-clamp line-2">
+                                Read our regular travel blog and know the latest
+                                update of tour and travel
+                            </p>
+                        </div>
 
-                    <div class="blog-slider">
-                        <div class="blog-list">
-                            <!-- Item 1 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/kuuga-1.webp"
-                                        alt="Kuuga"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 30 January 2000 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Kuuga
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
+                        <div class="blog-slider swiper-wrapper">
+                            <div class="blog-list swiper-slide">
+                                <!-- Item 1 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/kuuga-1.webp"
+                                            alt="Kuuga"
+                                            class="thumb"
+                                        />
                                     </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            30 January 2000
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Kuuga
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/agitoo.webp"
+                                            alt="Agito"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            28 January 2001</span
+                                        >
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Agito
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/ryuki.webp"
+                                            alt="Ryuki"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            03 February 2002
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Ryuki
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Item 2 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/agitoo.webp"
-                                        alt="Agito"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 28 January 2001</span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Agito
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
+
+                            <div class="blog-list swiper-slide">
+                                <!-- Item 4 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/faiz.webp"
+                                            alt="Faiz"
+                                            class="thumb"
+                                        />
                                     </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            26 January 2003
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider 555 (Faiz)
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/blade.webp"
+                                            alt="Blade"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            25 January 2004
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Blade
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 6 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/hibiki.webp"
+                                            alt="Hibiki"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            30 January 2005</span
+                                        >
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Hibiki
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Item 3 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/ryuki.webp"
-                                        alt="Ryuki"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 03 February 2002 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Ryuki
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
+
+                            <div class="blog-list swiper-slide">
+                                <!-- Item 7 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/kabuto_1.webp"
+                                            alt="Kabuto"
+                                            class="thumb"
+                                        />
                                     </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            29 January 2006
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Kabuto
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 8 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/deno.webp"
+                                            alt="Den - O"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            28 January 2007
+                                        </span>
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Den-O
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Item 9 -->
+                                <div class="blog-item">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/image/kiva.webp"
+                                            alt="Kiva"
+                                            class="thumb"
+                                        />
+                                    </a>
+                                    <div class="info">
+                                        <span class="date">
+                                            27 January 2008</span
+                                        >
+                                        <h3 class="title">
+                                            <a
+                                                href="#!"
+                                                class="line-clamp line-2"
+                                            >
+                                                Kamen Rider Kiva
+                                            </a>
+                                        </h3>
+                                        <a href="#!" class="btn cta-blog">
+                                            Read More
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="blog-list">
-                            <!-- Item 4 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/faiz.webp"
-                                        alt="Faiz"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 26 January 2003 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider 555 (Faiz)
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Item 5 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/blade.webp"
-                                        alt="Blade"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 25 January 2004 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Blade
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Item 6 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/hibiki.webp"
-                                        alt="Hibiki"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 30 January 2005</span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Hibiki
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-list">
-                            <!-- Item 7 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/kabuto_1.webp"
-                                        alt="Kabuto"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 29 January 2006 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Kabuto
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Item 8 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/deno.webp"
-                                        alt="Den - O"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 28 January 2007 </span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Den-O
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Item 9 -->
-                            <div class="blog-item">
-                                <a href="#!">
-                                    <img
-                                        src="./assets/image/kiva.webp"
-                                        alt="Kiva"
-                                        class="thumb"
-                                    />
-                                </a>
-                                <div class="info">
-                                    <span class="date"> 27 January 2008</span>
-                                    <h3 class="title">
-                                        <a href="#!" class="line-clamp line-2">
-                                            Kamen Rider Kiva
-                                        </a>
-                                    </h3>
-                                    <a href="#!" class="btn cta-blog">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -914,7 +1374,28 @@
         </footer>
 
         <script src="./assets/js/headerActive.js"></script>
-        <script src="./assets/js/showItem.js"></script>
-        <script src="./assets/js/blogShow.js"></script>
+
+        <!-- Thêm Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".swiper-container", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                speed: 1200,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".button-next", // Cập nhật với tên class mới
+                    prevEl: ".button-prev", // Cập nhật với tên class mới
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
     </body>
 </html>

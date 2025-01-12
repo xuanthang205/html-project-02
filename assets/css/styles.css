@@ -121,7 +121,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header .body {
@@ -329,7 +329,13 @@ a {
 
 /* Popular */
 .popular {
-    margin: 200px 0;
+    margin: 200px 0 170px;
+}
+
+.blog .main-content,
+.popular .main-content {
+    padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .popular-top {
@@ -346,12 +352,12 @@ a {
     line-height: 1.67; /* 166.667% */
 }
 
-.popular-top .controls {
+.popular .controls {
     display: flex;
     gap: 18px;
 }
 
-.popular-top .control-btn {
+.popular .control-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,7 +372,7 @@ a {
 
 .blog-list .cta-blog:hover,
 .popular .foot .book-btn:hover,
-.popular-top .control-btn:hover {
+.popular .control-btn:hover {
     background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
@@ -375,7 +381,8 @@ a {
 .popular .course-list {
     margin-top: 55px;
     display: flex;
-    gap: 30px;
+    gap: 0 30px;
+    flex-shrink: 0;
 }
 
 .popular .course-item {
@@ -460,11 +467,6 @@ a {
 .blog .main-content,
 .feedback .main-content {
     overflow: hidden;
-}
-
-.feedback-list {
-    display: flex;
-    transition: all ease 1s;
 }
 
 .feedback-item {
@@ -588,7 +590,7 @@ a {
 
 /* Blog */
 .blog {
-    padding: 96px 0;
+    padding: 96px 0 66px;
     background-color: #fffcf4;
 }
 
@@ -696,16 +698,6 @@ a {
     height: 1px;
     border-radius: 0.5px;
     background-color: #e2dfda;
-}
-
-.blog .dots {
-    margin-top: 38px;
-    justify-content: center;
-}
-
-.blog .dot {
-    width: 12px;
-    height: 12px;
 }
 
 /* Footer */
