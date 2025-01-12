@@ -1,6 +1,6 @@
-const blogSlider = document.querySelector('.blog-slider');
-const listBlog = document.querySelectorAll('.blog .blog-list');
-const dots = document.querySelectorAll('.blog .dot');
+const blogSlider = document.querySelector(".blog-slider");
+const listBlog = document.querySelectorAll(".blog .blog-list");
+const dots = document.querySelectorAll(".blog .dot");
 
 let currentIndexBlog = 0;
 let intervalBlog;
@@ -13,9 +13,9 @@ const nextBlog = (index) => {
     // Cập nhật trạng thái "active" cho dot
     dots.forEach((dot, dotIndex) => {
         if (dotIndex === index) {
-            dot.classList.add('active');
+            dot.classList.add("active");
         } else {
-            dot.classList.remove('active');
+            dot.classList.remove("active");
         }
     });
 };
@@ -45,4 +45,3 @@ Array.from(dots).forEach((dot, index) => {
 
 // Bắt đầu auto chuyển blog
 intervalBlog = setInterval(autoNextBlog, 5000);
-
